@@ -6,11 +6,13 @@ import { useInView } from "react-intersection-observer";
 const companies = [
   { name: "Iskcon Wavecity", logo: "/iskcon.webp" },
   { name: "Kisan Kumbh", logo: "/kisan.png" },
+  { name: "Bikano", logo: "/Bikano.jpg" },
+  { name: "Country Delight", logo: "/CD.jpg" },
+  { name: "PVR", logo: "/PVR.png" },
+  { name: "AstroNarad", logo: "/ag.png" },
   { name: "RM Rental Furniture", logo: "/rm.png" },
   { name: "Skywall", logo: "/skywall.webp" },
   { name: "Lemanda Chocolate House", logo: "/lemanda.webp" },
-  { name: "Mentor Education", logo: "/mentor.png" },
-  { name: "AstroNarad", logo: "/ag.png" },
   { name: "NSNP L2 Health", logo: "/nslp.png" },
   { name: "Mr.Loanji", logo: "/loanji.png" },
   { name: "Tax Rishi", logo: "/tax.png" },
@@ -38,7 +40,7 @@ const CompanyCard = ({ company, index }) => {
       }}
       className="relative group h-40"
     >
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-200 animate-tilt"></div>
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl blur opacity-50 group-hover:opacity-100 transition duration-200 animate-tilt"></div>
       <div className="relative bg-white rounded-xl h-full flex flex-col items-center justify-center p-6 border border-gray-800 group-hover:border-blue-400 transition-colors duration-300 overflow-hidden">
         <motion.div
           className="flex items-center justify-center h-full"
