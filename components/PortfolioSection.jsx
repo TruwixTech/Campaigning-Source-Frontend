@@ -51,7 +51,7 @@ const CompanyCard = ({ company, index }) => {
           <img
             src={company.logo}
             alt={company.name}
-            className="max-h-16 max-w-full object-contain transition-transform duration-300 group-hover:scale-110"
+            className="max-h-24 max-w-full object-contain transition-transform duration-300 group-hover:scale-110"
           />
         </motion.div>
         <motion.div
