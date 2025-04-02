@@ -27,10 +27,10 @@ const FloatingForm = ({ closeForm }) => {
 
     emailjs
       .sendForm(
-        "service_ij81e3r",
+        "service_n0tshcg",
         "template_ko5s0h6",
         form.current,
-        "Rv5e_uBZzEM1DIk9W"
+        "lSYWSkzq6KSqHXk_R"
       )
       .then(
         (result) => {
