@@ -4,21 +4,21 @@ import { useInView } from "react-intersection-observer";
 
 // Company logos (replace with your actual client logos)
 const companies = [
-  { name: "Iskcon Wavecity", logo: "/iskcon.webp" },
-  { name: "Kisan Kumbh", logo: "/kisan.png" },
-  { name: "Bikano", logo: "/Bikano.jpg" },
-  { name: "Country Delight", logo: "/CD.jpg" },
-  { name: "PVR", logo: "/PVR.png" },
-  { name: "AstroNarad", logo: "/ag.png" },
-  { name: "RM Rental Furniture", logo: "/rm.png" },
-  { name: "Skywall", logo: "/skywall.webp" },
-  { name: "Lemanda Chocolate House", logo: "/lemanda.webp" },
-  { name: "NSNP L2 Health", logo: "/nslp.png" },
-  { name: "Mr.Loanji", logo: "/loanji.png" },
-  { name: "Tax Rishi", logo: "/tax.png" },
-  { name: "Jaipur Jeweller", logo: "/jaipur.png" },
-  { name: "Veloxify", logo: "/veloxify1.jpg" },
-  { name: "OmSolar", logo: "/om.png" },
+  { name: "Iskcon Wavecity", logo: "/iskcon.webp", link: "https://www.iskconwavecity.com" },
+  { name: "Kisan Kumbh", logo: "/kisan.png", link: "https://kisankumbh.in" },
+  { name: "Bikano", logo: "/Bikano.jpg", link: "https://www.bikano.com" },
+  { name: "Country Delight", logo: "/CD.jpg", link: "https://countrydelight.in" },
+  { name: "PVR", logo: "/PVR.png", link: "https://www.pvrcinemas.com" },
+  { name: "AstroNarad", logo: "/ag.png", link: "https://astronarad.com" },
+  { name: "RM Rental Furniture", logo: "/rm.png", link: "https://rmfurniturerental.in" },
+  { name: "Skywall", logo: "/skywall.webp", link: "https://skywall-frontend.vercel.app" },
+  { name: "Lemanda Chocolate House", logo: "/lemanda.webp", link: "https://www.lemanda.in" },
+  { name: "NSNP L2 Health", logo: "/nslp.png", link: "https://www.nsnpl2health.com" },
+  { name: "Mr.Loanji", logo: "/loanji.png", link: "https://www.mrloanji.com" },
+  { name: "Tax Rishi", logo: "/tax.png", link: "https://taxrishi.in" },
+  { name: "Jaipur Jeweller", logo: "/jaipur.png", link: "https://www.jaipurjeweller.com" },
+  { name: "Veloxify", logo: "/veloxify1.jpg", link: "https://www.veloxify.com" },
+  { name: "OmSolar", logo: "/om.png", link: "https://omsolar.in" },
 ];
 
 const CompanyCard = ({ company, index }) => {
@@ -28,7 +28,10 @@ const CompanyCard = ({ company, index }) => {
   });
 
   return (
-    <motion.div
+    <motion.a
+      href={company.link}
+      target="_blank"
+      rel="noopener noreferrer"
       ref={ref}
       initial={{ opacity: 0, y: 50, rotate: -5 }}
       animate={inView ? { opacity: 1, y: 0, rotate: 0 } : {}}
@@ -38,7 +41,7 @@ const CompanyCard = ({ company, index }) => {
         damping: 15,
         delay: index * 0.08,
       }}
-      className="relative group h-40"
+      className="relative group h-40 block" // Added 'block' to make the anchor tag behave like a div
     >
       <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-500 rounded-xl blur opacity-50 group-hover:opacity-100 transition duration-200 animate-tilt"></div>
       <div className="relative bg-white rounded-xl h-full flex flex-col items-center justify-center p-6 border border-gray-800 group-hover:border-blue-400 transition-colors duration-300 overflow-hidden">
@@ -66,7 +69,7 @@ const CompanyCard = ({ company, index }) => {
           </span>
         </motion.div>
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 
