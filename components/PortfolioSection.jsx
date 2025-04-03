@@ -12,6 +12,8 @@ const companies = [
   { name: "AstroNarad", logo: "/ag.png", link: "https://astronarad.com" },
   { name: "RM Rental Furniture", logo: "/rm.png", link: "https://rmfurniturerental.in" },
   { name: "Skywall", logo: "/skywall.webp", link: "https://skywall-frontend.vercel.app" },
+  { name: "KD Sure", logo: "/KD.jpg", link: "https://kdsure.com/" },
+  { name: "Teja BuildTech", logo: "/Teja.png", link: "https://tejabuiltech.com/" },
   { name: "Lemanda Chocolate House", logo: "/lemanda.webp", link: "https://www.lemanda.in" },
   { name: "NSNP L2 Health", logo: "/nslp.png", link: "https://www.nsnpl2health.com" },
   { name: "Mr.Loanji", logo: "/loanji.png", link: "https://www.mrloanji.com" },
