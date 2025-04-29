@@ -22,7 +22,7 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
     "next": "^14.0.4",
-    "next-auth": "^4.24.5",
+    "next-auth": "^4.24.11",
     "nextjs-progressbar": "^0.0.16",
     "postcss": "8.4.33",
     "react": "18.2.0",
